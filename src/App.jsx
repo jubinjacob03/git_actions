@@ -24,7 +24,7 @@ function App() {
 
       </div>
       <p className="read-the-docs">
-        This Template has been edited !!
+        This Template has been edited !! + Update on New branch
       </p>
     </>
   )
