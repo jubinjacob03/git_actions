@@ -24,7 +24,7 @@ function App() {
 
       </div>
       <p className="read-the-docs">
-        This Template has been edited !!
+        Attempting a merge conflict !!
       </p>
     </>
   )
