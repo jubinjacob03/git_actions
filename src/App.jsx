@@ -1,33 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from "react";
+import UserList from "./components/UserList";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  // Use of camelCase for variables and arrow function names
+  const [simulateError, setSimulateError] = useState(false);
+
+  const handleSimulateError = () => {
+    setSimulateError(true);
+  };
 
   return (
-    <>
-      <div>
-        <div>
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </div>
-        <div>
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </div>
+    <div className="app">
+      <h1>User List</h1>
+      <div style={{display:'flex', width:'100%', justifyContent:'center'}}>
+        <button onClick={handleSimulateError}>Simulate Error</button>
       </div>
-      <h1>Git + GitHub</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          Click me !! : {count}
-        </button>
+      <UserList simulateError={simulateError} />
+    </div>
+  );
+};
 
-      </div>
-      <p className="read-the-docs">
-        Attempting a merge conflict !!
-      </p>
-    </>
-  )
-}
-
-export default App
+export default App;
