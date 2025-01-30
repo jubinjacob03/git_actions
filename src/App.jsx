@@ -24,7 +24,7 @@ function App() {
 
       </div>
       <p className="read-the-docs">
-        This Template has been edited !! + Update on New branch
+        This Template has been edited !! + Update on New branch , Forcing conflict on "merge-conflict-branch"
       </p>
     </>
   )
